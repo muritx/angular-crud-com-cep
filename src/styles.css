@@ -1,2 +1,117 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
+:root{
+    --cor-de-fundo:#201b2c;
+    --cor-caixa-login:#2f2841;
+    --cor-texto:#77ffc0;
+    --cor-botao:#04ad5e;
+}
+
+html{
+    height: 100%;
+}
+
+
+.cor-fundo{
+    background: linear-gradient(111.72deg, #2F679A 12.66%, #1D7D93 38.47%, #3B9974 62.9%, #3EA27B 91.41%);
+    height: 100vh;
+}
+
+.conteiner{
+    align-items: center;
+    padding: 0 70px;
+}
+
+/*esquerdo*/
+.left-login h1{
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 3vw;
+}
+
+.left-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4vh;
+}
+
+.left-image{
+    width: 30vw;
+    
+}
+
+/*direito*/
+
+.right-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#b_login {
+    flex-direction: column;
+    display: flex;
+    /* background-color: var(--cor-caixa-login); */
+    background-color: #ffffff4a;
+    padding: 30px 35px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#b_login .h2-1{
+    color: var(--cor-texto);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.usuario-senha{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#b_login ::placeholder{
+    color: var(--cor-botao);
+}
+
+.cor-fundo-form{
+    background: #ffffff44;
+    border: none;
+    border-radius: 10px;
+}
+
+#b_login input{
+    /* background: #514869; */
+    background: #ffffff85;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+}
+
+#b_login .botao-loguin{
+    background: var(--cor-botao);
+    text-transform: uppercase;
+    border: none;
+}
+
+#b_login .botao-cadastro{
+    background: var(--cor-botao);
+    border: none;
+    font-size: 15px;
+}
+
+#login{
+    display: flex;
+    margin-top: 20px;
+}
+
+.cadastro{
+    justify-content: center;
+    display: flex;
+    margin-top: 2vh;
+    text-decoration: none;
+    color: #00ff88;
+}
