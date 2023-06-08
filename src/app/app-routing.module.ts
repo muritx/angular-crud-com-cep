@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './component/login/login.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { ViewPersonComponent } from './component/dashboard/view-person/view-person.component';
+import { AddPersonComponent } from './component/dashboard/add-person/add-person.component';
+import { EditPersonComponent } from './component/dashboard/edit-person/edit-person.component';
+import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
-import { ViewPessoaComponent } from './component/dashboard/view-pessoa/view-pessoa.component';
-import { AddPessoaComponent } from './component/dashboard/add-pessoa/add-pessoa.component';
-import { EditPessoaComponent } from './component/dashboard/edit-pessoa/edit-pessoa.component';
 
 const routes: Routes = [
-  { path:'', pathMatch:'full', redirectTo: 'login' },
-  { path:'login', component:LoginComponent },
-  { path:'register', component:RegisterComponent },
-  { path: 'dashboard', component:DashboardComponent },
-  { path: 'view/:pessoaId', component: ViewPessoaComponent },
-  { path: 'create', component: AddPessoaComponent },
-  { path: 'update/:pessoaId', component: EditPessoaComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'login' },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'create', component: AddPersonComponent },
+  { path: 'read/:personId', component: ViewPersonComponent },
+  { path: 'update/:personId', component: EditPersonComponent }
 
 ];
 

@@ -1,35 +1,42 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/shared/auth.service';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/shared/auth-service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
+  email: string = '';
+  password: string = '';
 
-  email : string ='';
-  password : string ='';
+  message: string = '';
 
-  constructor(private auth : AuthService) {}
+  constructor(private router: Router, private auth: AuthService) { }
 
-  ngOnInit(): void {
-
-  } 
-
-  login(){
-    if(this.email == ''){
-      alert('Porfavor colocar email');
+  login() {
+    if(this.email == '') {
+      this.message = 'E-mail obrigatório';
       return;
+
     }
 
-    if(this.password == ''){
-      alert('Porfavor colocar senha');
+    if(this.password == '') {
+      this.message = 'Senha obrigatória';
       return;
+
     }
 
-    this.auth.login(this.email,this.password);
+    this.auth.login(this.email, this.password);
     this.email = '';
     this.password = '';
+
   }
+
+  register() {
+    this.router.navigate(['/register']);
+
+  }
+
 }

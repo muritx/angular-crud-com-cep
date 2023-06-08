@@ -1,40 +1,36 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { AddPersonComponent } from './component/dashboard/add-person/add-person.component';
+import { EditPersonComponent } from './component/dashboard/edit-person/edit-person.component';
+import { ViewPersonComponent } from './component/dashboard/view-person/view-person.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
-import { EditPessoaComponent } from './component/dashboard/edit-pessoa/edit-pessoa.component';
-import { ViewPessoaComponent } from './component/dashboard/view-pessoa/view-pessoa.component';
-import { AddPessoaComponent } from './component/dashboard/add-pessoa/add-pessoa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DashboardComponent,
+    AddPersonComponent,
+    EditPersonComponent,
+    ViewPersonComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent,
-    EditPessoaComponent,
-    ViewPessoaComponent,
-    AddPessoaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule, // for firestore
   ],
   providers: [],
   bootstrap: [AppComponent]
