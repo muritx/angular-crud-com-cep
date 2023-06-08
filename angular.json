@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "projeto-cep": {
+    "angular-15-firestore-crud": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/projeto-cep",
+            "outputPath": "dist/angular-15-firestore-crud",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "projeto-cep:build:production"
+              "browserTarget": "angular-15-firestore-crud:build:production"
             },
             "development": {
-              "browserTarget": "projeto-cep:build:development"
+              "browserTarget": "angular-15-firestore-crud:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "projeto-cep:build"
+            "browserTarget": "angular-15-firestore-crud:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "e1d9f395-0d0a-49ee-83be-4429fce65ef9"
+    "analytics": "fed73bb8-05f7-49e0-b33f-e834d0e7e81f"
   }
 }
