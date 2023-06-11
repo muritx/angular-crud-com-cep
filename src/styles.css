@@ -115,3 +115,10 @@ html{
     text-decoration: none;
     color: #00ff88;
 }
+
+input{
+    background: #ffffff85 !important;
+    border: none !important;
+    margin-bottom: 20px !important;
+    padding: 10px !important;
+}

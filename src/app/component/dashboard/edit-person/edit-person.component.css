@@ -1,0 +1,44 @@
+.cep{
+    width: 6em;
+}
+
+.nao-cep{
+    height: 38px;
+    margin-top: 30px;
+}
+
+.titulo1{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.selected{
+    background: #ffffff85 !important;
+    border: none !important;
+    border-radius: 6px;
+    margin-bottom: 20px !important;
+    padding: 8px !important;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.select-estado{
+    background: #ffffff85 !important;
+    border: none !important;
+    border-radius: 6px;
+    margin-bottom: 20px !important;
+    padding: 8px !important;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.select-aviso-estado{
+    position: absolute;
+    margin-left: 8vh;
+}
+
+.select-aviso{
+    position: absolute;
+    margin-left: 26vh;
+    margin-top: -9vh;
+}
