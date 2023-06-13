@@ -92,15 +92,15 @@ html{
 }
 
 #b_login .botao-loguin{
-    background: var(--cor-botao);
-    text-transform: uppercase;
-    border: none;
+    color: #fff;
+    background-color: #155724 !important;
+    border-color: #155724 !important;
 }
 
 #b_login .botao-cadastro{
-    background: var(--cor-botao);
-    border: none;
-    font-size: 15px;
+    color: #fff;
+    background-color: #155724 !important;
+    border-color: #155724 !important;
 }
 
 #login{
